@@ -11,8 +11,8 @@ const play = async () => {
     await run(game);
 };
 window.onload = async () => {
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 10000; i++) {
         await play();
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 50));
     }
 };
