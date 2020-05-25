@@ -1,0 +1,54 @@
+.tile1 {
+    background-image: url("images/1.jpg")
+}
+.tile2 {
+    background-image: url("images/2.jpg")
+}
+.tile3 {
+    background-image: url("images/3.jpg")
+}
+.tile4 {
+    background-image: url("images/4.jpg")
+}
+.tile5 {
+    background-image: url("images/5.jpg")
+}
+.tile6 {
+    background-image: url("images/6.jpg")
+}
+.tile7 {
+    background-image: url("images/7.jpg")
+}
+.tile8 {
+    background-image: url("images/8.jpg")
+}
+.tile0 {
+    background-image: url("images/0.jpg")
+}
+.bomb {
+    background-image: url("images/bomb.jpg")
+}
+.flagged {
+    background-image: url("images/flagged.jpg") !important;
+}
+.hidden {
+    background-image: url("images/hidden.jpg");
+}
+.tile {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 1px black solid !important;
+    background-size: contain;
+}
+.board {
+    margin-left: auto;
+    margin-right: auto;
+}
+#game_div {
+    width: 100%;
+}
+
+#games td:not(.tile) {
+    padding-top: 40px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/doc.css">
+
+    <script>
+        const ROWS = 16;
+        const COLS = 30;
+        const BOMBS = 99;
+    </script>
+    <script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/algorithm/helpers/clump.js"></script>
+    <script src="js/algorithm/helpers/state.js"></script>
+
+    <script src="js/algorithm/simple.js"></script>
+    <script src="js/algorithm/zone.js"></script>
+    <script src="js/algorithm/random.js"></script>
+    <script src="js/algorithm/endgame.js"></script>
+    <script src="js/algorithm/run.js"></script>
+
+    <script src="js/game.js"></script>
+
+    <script src="js/display.js"></script>
+</head>
+
+<body>
+    <div id="record_div">
+        <table style="margin-left: auto; margin-right: auto">
+            <tbody>
+                <tr>
+                    <td>
+                        <button id="play" onclick="play()">Play</button>
+                    </td>
+                    <td id="wins">0</td>
+                    <td id="result"></td>
+                    <td id="losses">0</td>
+                    <td id="record">0%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="solution"></div>
+    <br>
+    <div id="game_div"></div>
+</body>
+
+</html>
